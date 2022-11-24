@@ -33,6 +33,21 @@ export const Home = () => {
       </AppBar>
       {tabs[tab]}
       <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
     </>
   );
 };
