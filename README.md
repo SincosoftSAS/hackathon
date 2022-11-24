@@ -6,6 +6,10 @@
 2. [Vite](<https://vitejs.dev/>)
 3. [MUI](<https://mui.com/>)
 
+## El figma
+
+[Aplicación mobile de SGD (mobile only)](<https://www.figma.com/file/hrytPMG7CtvLIJuNohXW9G/App-SGD?node-id=0%3A1&t=yIBOH7CnM4ZtaId8-0>)
+
 ## Como instalarlo
 
 1. Clonar el proyecto `git clone https://github.com/SincosoftSAS/hackathon`
@@ -37,3 +41,5 @@ Cada BRANCH que el equipo cree para el ejercicio debe respeta  este template `{N
 - El mejor código es el que no se escribe, el siguiente mejor código es el que se borra.
 
 - Es preferible tener varios componentes pequeños que un componente super poderoso. [Las complicaciones accidentales dominan el software](<https://www.youtube.com/watch?v=WSes_PexXcA&t=336s&ab_channel=jbrains762>)
+
+- [Clean Code](<https://github.com/jnguyen095/clean-code/blob/master/Clean.Code.A.Handbook.of.Agile.Software.Craftsmanship.pdf>), escribir código es como escribir un libro, nosotros no somos lo únicos lectores, existen más desarrolladores y todos pensamos diferente, debemos escribir código que otros puedan entender.
