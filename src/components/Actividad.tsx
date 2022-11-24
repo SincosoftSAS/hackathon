@@ -1,10 +1,9 @@
 import React from 'react'
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-import { Button, CardContent, CardHeader, Chip, Stack, Divider } from '@mui/material';
+import { Button, CardContent, CardHeader, Chip, Stack, Divider, alpha } from '@mui/material';
 import TodayIcon from '@mui/icons-material/Today';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { light } from '../theme/variables';
 
 export const Actividad = () => {
   return (
@@ -35,6 +34,6 @@ export const Actividad = () => {
         </CardContent>
       </Card>
 
-      <Divider color="lightOtherDivider" /></>
+      <Divider /></>
   )
 }
