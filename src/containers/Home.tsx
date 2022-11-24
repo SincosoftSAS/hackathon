@@ -1,6 +1,7 @@
 import { PersonOutline, WorkOutline } from "@mui/icons-material";
 import { AppBar, Box, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
+import { CardComponent } from "../components/CardComponent";
 import PrimarySearchAppBar from "../components/Header";
 import { Actividades } from "./Actividades";
 
@@ -31,6 +32,7 @@ export const Home = () => {
         </Tabs>
       </AppBar>
       {tabs[tab]}
+      <CardComponent/>
     </>
   );
 };
