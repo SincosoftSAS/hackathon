@@ -33,6 +33,8 @@ export const Home = () => {
       </AppBar>
       {tabs[tab]}
       <Tarjetas />
+      <Tarjetas />
+      
     </>
   );
 };
