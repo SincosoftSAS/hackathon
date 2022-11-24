@@ -3,6 +3,7 @@ import { AppBar, Box, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
 import PrimarySearchAppBar from "../components/Header";
 import { Actividades } from "./Actividades";
+import Cards from './Cards';
 
 export const Home = () => {
   const [tab, setTab] = useState(0);
@@ -29,8 +30,10 @@ export const Home = () => {
             icon={<WorkOutline fontSize="small" />}
           />
         </Tabs>
+        
       </AppBar>
       {tabs[tab]}
+      <Cards></Cards>
     </>
   );
 };

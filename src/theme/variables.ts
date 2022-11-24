@@ -78,7 +78,7 @@ const typography: TypographyOptions = {
   },
   caption: {
     fontFamily: "Roboto",
-    fontSize: "14px",
+    fontSize: "12px",
     fontWeight: "500",
   },
 };
