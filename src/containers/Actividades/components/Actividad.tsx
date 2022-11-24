@@ -39,7 +39,7 @@ export const Actividad = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="center"
-          marginTop={1}
+          marginTop={2}
         >
           <Stack>
             <Typography variant="caption">Proveedor:</Typography>

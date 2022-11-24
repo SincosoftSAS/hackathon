@@ -1,6 +1,5 @@
-import { Box, Divider, Stack } from '@mui/material';
+import { Box } from '@mui/material';
 import { Filtros } from './components/Filtros';
-import { Actividad } from './components/Actividad';
 import { ListaActividades } from './components/ListaActividades';
 
 export const Actividades = () => (

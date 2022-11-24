@@ -10,7 +10,7 @@ export const Filtros = () => {
       justifyContent="space-between"
       p={1.5}
     >
-      <Stack direction="row" spacing={1}>
+      <Stack direction="row" spacing={0.5}>
         <Chip label="Todas" variant="outlined" color="primary" />
         <Chip label="Vencidas" variant="outlined" color="primary" />
         <Chip label="Actuales" variant="outlined" color="primary" />

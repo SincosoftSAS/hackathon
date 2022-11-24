@@ -1,6 +1,34 @@
-import { ThemeOptions } from "@mui/material/styles";
+import { Components, Shadows, Theme, ThemeOptions } from "@mui/material/styles";
 import { ColorPartial } from "@mui/material/styles/createPalette";
 import { TypographyOptions } from "@mui/material/styles/createTypography";
+
+const shadows: Shadows = [
+  "none",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+  "0px 2px 1px -1px rgba(16, 24, 64, 0.1),0px 1px 1px 0px rgba(16, 24, 64, .14),0px 1px 3px 0px rgba(16, 24, 64, .12)",
+];
 
 const grey: ColorPartial = {
   50: "#FAFBFF",
@@ -20,7 +48,7 @@ const grey: ColorPartial = {
 };
 
 const typography: TypographyOptions = {
-  fontFamily: "sans-serif",
+  fontFamily: "Roboto,sans-serif",
   h1: {
     fontFamily: "Nunito",
     fontSize: "96px",
@@ -83,8 +111,41 @@ const typography: TypographyOptions = {
   },
 };
 
+const components: Components<Omit<Theme, 'components'>> = {
+  MuiChip: {
+    styleOverrides: {
+      root: {
+        borderRadius: 4
+      }
+    }
+  },
+  MuiTab: {
+    styleOverrides: {
+      root: {
+        textTransform: 'none'
+      }
+    }
+  },
+  MuiCardContent: {
+    styleOverrides: {
+      root: {
+        "&:last-child": {
+          paddingBottom: ".5rem"
+        }
+      }
+    }
+  },
+  MuiButton: {
+    styleOverrides: {
+      root: {
+        minWidth: 'unset'
+      }
+    }
+  }
+};
 export const light: ThemeOptions = {
   typography,
+  shadows,
   palette: {
     grey,
     text: {
@@ -138,42 +199,12 @@ export const light: ThemeOptions = {
     },
     divider: "rgba(16, 24, 64, 0.12)",
   },
-  components: {
-    MuiChip: {
-      styleOverrides: {
-        root: {
-          borderRadius: 4
-        }
-      }
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          textTransform: 'none'
-        }
-      }
-    },
-    MuiCardContent: {
-      styleOverrides: {
-        root: {
-          "&:last-child": {
-            paddingBottom: ".5rem"
-          }
-        }
-      }
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          minWidth: 'unset'
-        }
-      }
-    }
-  }
+  components
 };
 
 export const dark: ThemeOptions = {
   typography,
+  shadows,
   palette: {
     grey,
     text: {
@@ -225,4 +256,5 @@ export const dark: ThemeOptions = {
       contrastText: "rgba(0, 0, 0, 0.87)",
     },
   },
+  components
 };
