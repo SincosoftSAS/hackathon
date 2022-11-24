@@ -1,4 +1,5 @@
 import { ExpandMore } from "@mui/icons-material";
+import { Button } from "@mui/material";
 import {
   Box,
   Chip,
@@ -13,13 +14,14 @@ import {
 
 export const Actividades = () => {
   return (
-    <Box display="flex" p={2}>
+    <Box display="flex" >
       <Stack
         direction="row"
         alignItems="center"
         justifyContent="space-between"
         spacing={2}
         width="100%"
+        p={1.5}
       >
         <Stack direction="row" spacing={1}>
           <Chip label="Todas" variant="outlined" color="primary" />
@@ -27,12 +29,10 @@ export const Actividades = () => {
           <Chip label="Actuales" variant="outlined" color="primary" />
         </Stack>
         <Stack direction="row" alignItems="center" gap={1}>
-          <Typography variant="body2" color="text.primary">
-            Filtrar
-          </Typography>
-          <IconButton color="default">
-            <ExpandMore />
-          </IconButton>
+          <Button color="primary" endIcon={<ExpandMore/>}>
+              Filtrar                        
+          </Button>
+
         </Stack>
       </Stack>
       <Box></Box>

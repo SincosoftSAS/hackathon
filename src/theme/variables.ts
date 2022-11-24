@@ -78,8 +78,8 @@ const typography: TypographyOptions = {
   },
   caption: {
     fontFamily: "Roboto",
-    fontSize: "14px",
-    fontWeight: "500",
+    fontSize: "12px",
+    fontWeight: "400",
   },
 };
 
@@ -150,6 +150,13 @@ export const light: ThemeOptions = {
       styleOverrides: {
         root: {
           textTransform: 'none'
+        }
+      }
+    },
+    MuiButton:{
+      styleOverrides:{
+        root:{
+          textTransform:"none"
         }
       }
     }
