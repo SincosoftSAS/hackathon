@@ -1,5 +1,5 @@
-import { PersonOutline, WorkOutline} from "@mui/icons-material";
-import { AppBar, Box, Divider, Tab, Tabs } from "@mui/material";
+import { PersonOutline, WorkOutline } from "@mui/icons-material";
+import { AppBar, Box, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
 import { Actividad } from "../components/Actividad";
 import PrimarySearchAppBar from "../components/Header";
@@ -37,7 +37,6 @@ export const Home = () => {
       <Box pt={18}>
         {tabs[tab]}
         <Actividad />
-        <Divider />
         <Actividad />
         <Actividad />
         <Actividad />
