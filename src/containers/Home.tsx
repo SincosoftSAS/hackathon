@@ -1,6 +1,7 @@
 import { PersonOutline, WorkOutline } from "@mui/icons-material";
-import { AppBar, Box, Tab, Tabs } from "@mui/material";
+import { AppBar, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
+import CardActaEntrega from "../components/CardActaEntrega";
 import PrimarySearchAppBar from "../components/Header";
 import { Actividades } from "./Actividades";
 
@@ -28,9 +29,12 @@ export const Home = () => {
             iconPosition="start"
             icon={<WorkOutline fontSize="small" />}
           />
-        </Tabs>
-      </AppBar>
+        </Tabs>        
+      </AppBar>      
       {tabs[tab]}
+      <CardActaEntrega/>
+      <CardActaEntrega/>
+      <CardActaEntrega/>
     </>
   );
 };
