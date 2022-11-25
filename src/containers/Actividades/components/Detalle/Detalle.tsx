@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ButtonNav from './ButtonNav'
 import { CardDetalle } from './CardDetalle'
 import NavBar from './NavBar'
 
 const Detalle = () => {
-  return (
+   
+    return (
     <>
         <NavBar/>
-        <CardDetalle/>
+        {
+            [1,2,3].map(()=> <CardDetalle/>)
+        }
+        <ButtonNav/>
     </>
   )
 }
