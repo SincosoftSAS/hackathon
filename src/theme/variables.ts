@@ -159,7 +159,7 @@ export const light: ThemeOptions = {
           minWidth: 'unset',
         }
       }
-    }
+    } 
   }
 };
 

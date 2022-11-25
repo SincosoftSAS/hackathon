@@ -4,6 +4,7 @@ import { useState } from "react";
 import CardActaEntrega from "../components/CardActaEntrega";
 import PrimarySearchAppBar from "../components/Header";
 import { Actividades } from "./Actividades";
+import NavegationDescription from '../components/NavegationDescription';
 
 export const Home = () => {
   const [tab, setTab] = useState(0);

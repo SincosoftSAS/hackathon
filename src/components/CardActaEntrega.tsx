@@ -8,7 +8,6 @@ import {
   Stack,
   Chip,
   Button,
-  Icon,
 } from "@mui/material";
 
 import TodayIcon from "@mui/icons-material/Today";
@@ -67,5 +66,3 @@ const CardActaEntrega = () => {
 };
 
 export default CardActaEntrega;
-
-// <Card sx={{ maxWidth: 345 }}>
