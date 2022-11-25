@@ -45,7 +45,6 @@ export const Home = () => {
         <Actividad />
         <Actividad />
       </Box>
-
     </>
   );
 };
