@@ -13,14 +13,16 @@ export const Seguimiento = () => {
         ></CardHeader>
         <CardContent>
           <Stack direction="row" justifyContent="space-between">
-            <Typography component="div" variant="body1">
+            <Typography component="div" variant="subtitle2">
               Paso 0
             </Typography>
             <Chip variant="filled" label="Registrado" />
           </Stack>
-          <DetalleSeguimiento icono="tag"></DetalleSeguimiento>
-          <DetalleSeguimiento icono="calendario"></DetalleSeguimiento>
-          <DetalleSeguimiento icono="editar"></DetalleSeguimiento>
+          <Stack gap={1}>
+            <DetalleSeguimiento icono="tag" titulo="Actividad" descripcion="Registro de Correspondencia"></DetalleSeguimiento>
+            <DetalleSeguimiento icono="calendario" titulo="Fecha" descripcion="00:00 30/01/2022"></DetalleSeguimiento>
+            <DetalleSeguimiento icono="editar" titulo="Observaciones" descripcion="Factura sin código de barras"></DetalleSeguimiento>
+          </Stack>
         </CardContent>
       </Card>
       <Divider></Divider>
