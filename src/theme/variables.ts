@@ -152,6 +152,20 @@ export const light: ThemeOptions = {
           textTransform: 'none'
         }
       }
+    },
+    MuiCardContent: {
+      styleOverrides: {
+        root: {
+          "&:last-child": { paddingBottom: "unset" }
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          "&": { minWidth: "unset" }
+        }
+      }
     }
   }
 };
