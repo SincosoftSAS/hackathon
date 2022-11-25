@@ -32,8 +32,8 @@ export const Home = () => {
         </Tabs>
       </AppBar>
       {tabs[tab]}
-      <Tarjetas />
-      <Tarjetas />
+        {/* <Tarjetas /> */}
+        {/* <Tarjetas /> */}
       
     </>
   );
