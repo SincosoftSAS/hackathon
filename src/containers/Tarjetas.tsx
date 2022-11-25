@@ -14,7 +14,7 @@ export const Tarjetas = () => {
                                 <Chip label="Confirmar recibido" variant="filled" />
                                 <Stack direction="row" align-items="center" gap={1}>
                                     <Stack alignItems="center" direction="row">
-                                        <Today />
+                                        <Today fontSize="small"/>
                                     </Stack>
                                     <Stack alignItems="center">
                                         <Box>
@@ -32,7 +32,9 @@ export const Tarjetas = () => {
                                     <Typography variant="caption">Proveedor</Typography>
                                     <Typography variant="body2" color="text.secondary">800140949-CAFESALUD</Typography>
                                 </Stack>
-                                <Button variant="outlined"><ExpandMore/></Button>
+                                <Button variant="outlined">
+                                    <ExpandMore/>
+                                </Button>
                             </Stack>
                         </Stack>
                     </CardContent>
@@ -46,7 +48,7 @@ export const Tarjetas = () => {
                                 <Chip label="Confirmar recibido" variant="filled" />
                                 <Stack direction="row" align-items="center" gap={1}>
                                     <Stack alignItems="center" direction="row">
-                                        <Today color="error"/>
+                                        <Today color="error" fontSize="small"/>
                                     </Stack>
                                     <Stack alignItems="center">
                                         <Box>
