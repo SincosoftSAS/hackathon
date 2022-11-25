@@ -5,6 +5,8 @@ import { useState } from "react";
 import { Seguimiento } from "../components/Seguimiento";
 import { Actividades } from "./Actividades";
 
+
+
 export const Seguimientos = () => {
   const [tab, setTab] = useState(0);
 
@@ -27,12 +29,10 @@ export const Seguimientos = () => {
             </Typography>
           </Toolbar>
         </AppBar>
-        <Seguimiento></Seguimiento>
-        <Seguimiento></Seguimiento>
-        <Seguimiento></Seguimiento>
-        <Seguimiento></Seguimiento>
-        <Seguimiento></Seguimiento>
-        <Seguimiento></Seguimiento>
+        <Seguimiento estado="registrado"></Seguimiento>
+        <Seguimiento estado="cancelado" ></Seguimiento>
+        <Seguimiento estado="completado"></Seguimiento>
+        <Seguimiento estado="rechazado"></Seguimiento>
         <BottomNavigation>
           <BottomNavigationAction label="Recents" icon={<DescriptionIcon />} />
         </BottomNavigation>

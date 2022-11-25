@@ -4,10 +4,10 @@ import TurnedInIcon from '@mui/icons-material/TurnedIn';
 import { Stack, Typography } from '@mui/material';
 import { light } from '../theme/variables';
 
-type Icon = "calendario" | "tag" | "editar";
+type TipoIcono = "calendario" | "tag" | "editar";
 
 interface DetalleSeguimientoProps {
-  icono: Icon,
+  icono: TipoIcono,
   titulo: string,
   descripcion: string
 }

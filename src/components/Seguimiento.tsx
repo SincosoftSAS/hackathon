@@ -1,8 +1,16 @@
 import { Card, CardContent, CardHeader, Chip, Divider, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
+import { light } from "../theme/variables";
 import { DetalleSeguimiento } from "./DetalleSeguimiento";
 
-export const Seguimiento = () => {
+
+type Estado = "registrado" | "cancelado" | "rechazado" | "completado";
+
+interface SeguimientoProps {
+  estado: Estado
+}
+
+export const Seguimiento = ({ estado }: SeguimientoProps) => {
   return (
     <>
       <Card elevation={0}>
@@ -13,10 +21,10 @@ export const Seguimiento = () => {
         ></CardHeader>
         <CardContent>
           <Stack direction="row" justifyContent="space-between">
-            <Typography component="div" variant="subtitle2">
+            <Typography component="div" variant="subtitle2" color={light.palette?.text?.primary}>
               Paso 0
             </Typography>
-            <Chip variant="filled" label="Registrado" />
+            <Chip variant="filled" label="Registrado" color="error" />
           </Stack>
           <Stack gap={1}>
             <DetalleSeguimiento icono="tag" titulo="Actividad" descripcion="Registro de Correspondencia"></DetalleSeguimiento>
