@@ -16,9 +16,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <ThemeProvider theme={SincoTheme}>
       {/* <Home /> */}
       <Detalle/>
-      <Detalle/>
-      <Detalle/>
-      <Detalle/>
     </ThemeProvider>
   </React.StrictMode>
 );

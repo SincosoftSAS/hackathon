@@ -1,6 +1,7 @@
 import { ThemeOptions } from "@mui/material/styles";
 import { ColorPartial } from "@mui/material/styles/createPalette";
 import { TypographyOptions } from "@mui/material/styles/createTypography";
+import { BottomNavigation } from '@mui/material';
 
 const grey: ColorPartial = {
   50: "#FAFBFF",
@@ -119,6 +120,7 @@ export const light: ThemeOptions = {
       main: "#FB8500",
       dark: "#F85500",
       light: "#FC9726",
+      other: "#FFB400"
     },
     info: {
       main: "#2D9FC5",

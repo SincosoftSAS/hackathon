@@ -5,7 +5,8 @@ import { KeyboardArrowDown, Today, ExpandMore } from '@mui/icons-material';
 
 export default function CardActaDeEntrega(
     {
-        fechaVencimiento, colorCalendario
+        fechaVencimiento, 
+        colorCalendario
     }: 
     {
         fechaVencimiento: any, 
