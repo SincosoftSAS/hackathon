@@ -17,7 +17,6 @@ export const Home = () => {
         <Tabs
           value={tab}
           variant="fullWidth"
-          onChange={(event, newTab) => setTab(newTab)}
         >
           <Tab
             label="Asignadas a mi"

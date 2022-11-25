@@ -92,6 +92,12 @@ export const light: ThemeOptions = {
       secondary: "rgba(16, 24, 64, 0.6)",
       disabled: "rgba(16, 24, 64, 0.38)",
     },
+    otherRaitingActive: {
+      main: "#FFB400",
+      dark: "#FFB400",
+      light: "#FFB400",
+      contrastText: "#FFF",
+    },
     primary: {
       main: "#1E62A1",
       dark: "#003972",
@@ -101,6 +107,7 @@ export const light: ThemeOptions = {
       main: "#0CBBE2",
       dark: "#008BB0",
       light: "#67EEFF",
+      contrastText:"#FFFFFF"
     },
     action: {
       active: "rgba(16, 24, 64, 0.54)",
@@ -165,6 +172,9 @@ export const light: ThemeOptions = {
 
 export const dark: ThemeOptions = {
   typography,
+  status: {
+    danger: "#FFB400"
+  },
   palette: {
     grey,
     text: {

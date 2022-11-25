@@ -1,6 +1,6 @@
 import PrimarySearchAppBar from "./components/Header";
 import { Home } from "./containers/Home";
-import { Seguimiento } from "./containers/Seguimientp";
+import { Seguimiento } from "./containers/Seguimiento";
 
 function App() {
   return (
