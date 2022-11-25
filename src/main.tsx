@@ -9,11 +9,16 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./main.css";
 import { Home } from './containers/Home';
+import Detalle from './containers/Detalle';
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider theme={SincoTheme}>
-      <Home />
+      {/* <Home /> */}
+      <Detalle/>
+      <Detalle/>
+      <Detalle/>
+      <Detalle/>
     </ThemeProvider>
   </React.StrictMode>
 );
