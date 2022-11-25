@@ -152,7 +152,14 @@ export const light: ThemeOptions = {
           textTransform: 'none'
         }
       }
-    }
+    },
+    MuiButton:{
+      styleOverrides: {
+        root:{
+          minWidth: 'unset',
+        }
+      }
+    } 
   }
 };
 
