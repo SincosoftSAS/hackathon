@@ -36,16 +36,15 @@ export const Seguimientos = () => {
         <Seguimiento estado="cancelado" ></Seguimiento>
         <Seguimiento estado="completado"></Seguimiento>
         <Seguimiento estado="rechazado"></Seguimiento>
-        <BottomNavigation>
-          <BottomNavigationAction label="Recents" icon={<DescriptionIcon />} />
-          <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-            <BottomNavigation value={value} showLabels sx={{ paddingX: 3 }} >
-              <BottomNavigationAction label="Resumen" icon={<DescriptionIcon />} />
-              <BottomNavigationAction label="Adjuntos" icon={<AttachFile />} />
-              <BottomNavigationAction label="Editar" icon={<Create />} />
-              <BottomNavigationAction label="Seguimiento" icon={<History />} />
-            </BottomNavigation>
-          </Paper>
+        <BottomNavigationAction label="Recents" icon={<DescriptionIcon />} />
+        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+          <BottomNavigation value={value} showLabels sx={{ paddingX: 3 }} >
+            <BottomNavigationAction label="Resumen" icon={<DescriptionIcon />} />
+            <BottomNavigationAction label="Adjuntos" icon={<AttachFile />} />
+            <BottomNavigationAction label="Editar" icon={<Create />} />
+            <BottomNavigationAction label="Seguimiento" icon={<History />} />
+          </BottomNavigation>
+        </Paper>
       </Box>
       {/* bottom bar mnu */}
 
