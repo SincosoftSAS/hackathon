@@ -1,12 +1,11 @@
-import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
+import { MoreVert } from "@mui/icons-material";
+import SearchIcon from "@mui/icons-material/Search";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
-import SearchIcon from "@mui/icons-material/Search";
-import { MoreVert } from "@mui/icons-material";
+import { alpha, styled } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -46,7 +45,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box width="100%" position="sticky" zIndex={1} sx={{ flexGrow: 1 }}>
       <AppBar position="sticky">
         <Toolbar sx={{ paddingX: 1.5, paddingY: 1, gap: 1 }}>
           <Search>

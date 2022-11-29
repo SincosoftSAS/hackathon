@@ -1,9 +1,8 @@
-import React from 'react'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import TodayIcon from '@mui/icons-material/Today';
+import { Button, CardContent, CardHeader, Chip, Divider, Stack } from '@mui/material';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-import { Button, CardContent, CardHeader, Chip, Stack, Divider, alpha } from '@mui/material';
-import TodayIcon from '@mui/icons-material/Today';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export const Actividad = () => {
   return (
@@ -33,7 +32,7 @@ export const Actividad = () => {
           </Stack>
         </CardContent>
       </Card>
-
-      <Divider /></>
+      <Divider />
+    </>
   )
 }

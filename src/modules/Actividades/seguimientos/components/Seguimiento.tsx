@@ -1,13 +1,20 @@
 import { Card, CardContent, CardHeader, Chip, Divider, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import { light } from "../theme/variables";
+import { light } from "../../../../theme/variables";
 import { DetalleSeguimiento } from "./DetalleSeguimiento";
 
 
-type Estado = "registrado" | "cancelado" | "rechazado" | "completado";
+type Estado = "Registrado" | "Cancelado" | "Rechazado" | "Completado";
 
 interface SeguimientoProps {
   estado: Estado
+}
+
+const estados: Record<Estado, Record<string, string>> = {
+  Registrado: { label: "Registrado", color: "primary" },
+  Cancelado: { label: "Cancelado", color: "warning" },
+  Rechazado: { label: "Rechazado", color: "error" },
+  Completado: { label: "Completado", color: "success" }
 }
 
 export const Seguimiento = ({ estado }: SeguimientoProps) => {
@@ -15,16 +22,16 @@ export const Seguimiento = ({ estado }: SeguimientoProps) => {
     <>
       <Card elevation={0}>
         <CardHeader
-          sx={{ paddingTop: 2, paddingX: 3 }}
+          sx={{ paddingTop: 2, paddingBottom: 1.5, paddingX: 3 }}
           title="Adriana Lucia Angarita Rodriguez"
           titleTypographyProps={{ variant: "body1" }}
         ></CardHeader>
-        <CardContent>
+        <CardContent sx={{ paddingTop: 0, paddingBottom: 2, paddingX: 3 }}>
           <Stack direction="row" justifyContent="space-between">
             <Typography component="div" variant="subtitle2" color={light.palette?.text?.primary}>
               Paso 0
             </Typography>
-            <Chip variant="filled" label="Registrado" color="error" />
+            <Chip variant="filled" {...estados[estado]} />
           </Stack>
           <Stack gap={1}>
             <DetalleSeguimiento icono="tag" titulo="Actividad" descripcion="Registro de Correspondencia"></DetalleSeguimiento>

@@ -2,7 +2,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import EditIcon from '@mui/icons-material/Edit';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
 import { Stack, Typography } from '@mui/material';
-import { light } from '../theme/variables';
+import { light } from '../../../../theme/variables';
 
 type TipoIcono = "calendario" | "tag" | "editar";
 
@@ -12,12 +12,14 @@ interface DetalleSeguimientoProps {
   descripcion: string
 }
 
+const estilosIconos: Record<string, string> = { fontSize: 'small', color: 'disabled' }
+
 export const DetalleSeguimiento = ({ icono, titulo, descripcion }: DetalleSeguimientoProps) => {
 
   const Iconos = {
-    calendario: <CalendarMonthIcon fontSize='small' color='disabled' />,
-    editar: <EditIcon fontSize='small' color='disabled' />,
-    tag: <TurnedInIcon fontSize='small' color='disabled' />
+    calendario: <CalendarMonthIcon  {...estilosIconos} />,
+    editar: <EditIcon {...estilosIconos} />,
+    tag: <TurnedInIcon  {...estilosIconos} />
   }
 
   return (

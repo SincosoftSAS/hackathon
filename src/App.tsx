@@ -1,10 +1,9 @@
-import { Seguimientos } from "./containers/Seguimientos";
-
+import { Home } from "./containers/Home";
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      <Seguimientos></Seguimientos>
+      <Home />
+      {/* <Seguimientos></Seguimientos> */}
     </>
   );
 }
