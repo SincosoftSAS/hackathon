@@ -119,6 +119,7 @@ export const light: ThemeOptions = {
       main: "#FB8500",
       dark: "#F85500",
       light: "#FC9726",
+      contrastText: "#FFF",
     },
     info: {
       main: "#2D9FC5",
