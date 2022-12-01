@@ -3,7 +3,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import { BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import { useState } from "react";
 
-export const NavegacionInferior = () => {
+export const BarraInferior = () => {
 
   const [value, setValue] = useState(3);
 

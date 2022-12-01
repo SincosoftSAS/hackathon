@@ -1,11 +1,14 @@
 
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
-import { NavegacionInferior } from "../../../../components/NavegacionInferior";
+import { BarraInferior } from "../../../layout/components/barra-inferior";
 import { Acciones } from "./Acciones";
 import { Seguimiento } from "./Seguimiento";
 
-export const Seguimientos = () => {
+export const unidad_medida = () => {
+
+  const f = 'didier';
+
   return (
     <>
       <Box width="100%">
@@ -27,7 +30,7 @@ export const Seguimientos = () => {
         <Seguimiento estado="Cancelado" ></Seguimiento>
         <Seguimiento estado="Completado"></Seguimiento>
         <Seguimiento estado="Rechazado" ></Seguimiento>
-        <NavegacionInferior></NavegacionInferior>
+        <BarraInferior></BarraInferior>
         <Acciones></Acciones>
       </Box>
     </>

@@ -2,7 +2,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import EditIcon from '@mui/icons-material/Edit';
 import TurnedInIcon from '@mui/icons-material/TurnedIn';
 import { Stack, Typography } from '@mui/material';
-import { light } from '../../../../theme/variables';
+import { light } from '../../../theme/variables';
 
 type TipoIcono = "calendario" | "tag" | "editar";
 

@@ -1,20 +1,23 @@
 import { Card, CardContent, CardHeader, Chip, Divider, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import { light } from "../../../../theme/variables";
+import { light } from "../../../theme/variables";
+import { EstadoSeguimiento } from "../types/estado-seguimiento-tipo";
 import { DetalleSeguimiento } from "./DetalleSeguimiento";
 
 
-type Estado = "Registrado" | "Cancelado" | "Rechazado" | "Completado";
 
-interface SeguimientoProps {
-  estado: Estado
-}
 
-const estados: Record<Estado, Record<string, string>> = {
+
+
+const estados: Record<EstadoSeguimiento, Record<string, string>> = {
   Registrado: { label: "Registrado", color: "primary" },
   Cancelado: { label: "Cancelado", color: "warning" },
   Rechazado: { label: "Rechazado", color: "error" },
-  Completado: { label: "Completado", color: "success" }
+  Completado: { label: "Completado", color: "success" },
+}
+
+interface SeguimientoProps {
+  estado: EstadoSeguimiento
 }
 
 export const Seguimiento = ({ estado }: SeguimientoProps) => {

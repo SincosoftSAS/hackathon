@@ -1,8 +1,7 @@
-import { MoreVert } from "@mui/icons-material";
-import SearchIcon from "@mui/icons-material/Search";
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import SearchIcon from '@mui/icons-material/Search';
+import { IconButton } from '@mui/material';
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import { alpha, styled } from "@mui/material/styles";
 import Toolbar from "@mui/material/Toolbar";
@@ -43,11 +42,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+export default function BarraPrincipal() {
   return (
-    <Box width="100%" position="sticky" zIndex={1} sx={{ flexGrow: 1 }}>
-      <AppBar position="sticky">
-        <Toolbar sx={{ paddingX: 1.5, paddingY: 1, gap: 1 }}>
+    <>
+      <AppBar>
+        <Toolbar>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -64,10 +63,11 @@ export default function PrimarySearchAppBar() {
             aria-haspopup="true"
             color="inherit"
           >
-            <MoreVert />
+            <MoreVertIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
-    </Box>
+      <Toolbar />
+    </>
   );
 }

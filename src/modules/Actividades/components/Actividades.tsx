@@ -1,30 +1,11 @@
-import { ExpandMore, PersonOutline, WorkOutline } from "@mui/icons-material";
-import { Chip, IconButton, Stack, Tab, Tabs, Typography } from "@mui/material";
-import { useState } from "react";
+import { ExpandMore } from "@mui/icons-material";
+import { Chip, IconButton, Stack, Typography } from "@mui/material";
 import { Actividad } from "./Actividad";
 
 export const Actividades = () => {
 
-  const [tab, setTab] = useState(0);
-
   return (
     <>
-      <Tabs
-        value={tab}
-        variant="fullWidth"
-        onChange={(event, newTab) => setTab(newTab)}
-      >
-        <Tab
-          label="Asignadas a mi"
-          iconPosition="start"
-          icon={<PersonOutline fontSize="small" />}
-        />
-        <Tab
-          label="Para mi cargo"
-          iconPosition="start"
-          icon={<WorkOutline fontSize="small" />}
-        />
-      </Tabs>
       <Stack
         direction="row"
         alignItems="center"
@@ -47,9 +28,11 @@ export const Actividades = () => {
         </Stack>
       </Stack>
 
-      {[1, 2, 3, 4, 5, 6, 7].map(() => {
-        return (<Actividad></Actividad>)
-      })}
+      {
+        [1, 2, 3, 4, 5, 6, 7].map(() => {
+          return (<Actividad></Actividad>)
+        })
+      }
 
     </>
   );
