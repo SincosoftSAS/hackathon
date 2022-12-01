@@ -1,19 +1,11 @@
 import { ExpandMore } from "@mui/icons-material";
-import {
-  Box,
-  Chip,
-  FormControl,
-  IconButton,
-  InputLabel,
-  MenuItem,
-  Select,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Chip, IconButton, Stack, Typography } from "@mui/material";
+import { Actividad } from "./Actividad";
 
 export const Actividades = () => {
+
   return (
-    <Box display="flex" p={2}>
+    <>
       <Stack
         direction="row"
         alignItems="center"
@@ -35,7 +27,13 @@ export const Actividades = () => {
           </IconButton>
         </Stack>
       </Stack>
-      <Box></Box>
-    </Box>
+
+      {
+        [1, 2, 3, 4, 5, 6, 7].map(() => {
+          return (<Actividad></Actividad>)
+        })
+      }
+
+    </>
   );
 };

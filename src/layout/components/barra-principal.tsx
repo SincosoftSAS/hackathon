@@ -1,12 +1,10 @@
-import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import SearchIcon from '@mui/icons-material/Search';
+import { IconButton } from '@mui/material';
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
-import SearchIcon from "@mui/icons-material/Search";
-import { MoreVert } from "@mui/icons-material";
+import { alpha, styled } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -44,11 +42,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+export default function BarraPrincipal() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar sx={{ paddingX: 1.5, paddingY: 1, gap: 1 }}>
+    <>
+      <AppBar>
+        <Toolbar>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -65,10 +63,11 @@ export default function PrimarySearchAppBar() {
             aria-haspopup="true"
             color="inherit"
           >
-            <MoreVert />
+            <MoreVertIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
-    </Box>
+      <Toolbar />
+    </>
   );
 }

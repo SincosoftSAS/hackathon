@@ -1,10 +1,9 @@
-import PrimarySearchAppBar from "./components/Header";
-import { Home } from "./containers/Home";
-
+import { Layout } from "./layout/components/layout";
 function App() {
   return (
     <>
-      <Home />
+      <Layout></Layout>
+      {/* <Seguimientos></Seguimientos> */}
     </>
   );
 }

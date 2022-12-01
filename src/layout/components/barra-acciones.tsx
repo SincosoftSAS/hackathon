@@ -1,18 +1,14 @@
 import { PersonOutline, WorkOutline } from "@mui/icons-material";
-import { AppBar, Box, Tab, Tabs } from "@mui/material";
+import { AppBar, Tab, Tabs, Toolbar } from "@mui/material";
 import { useState } from "react";
-import PrimarySearchAppBar from "../components/Header";
-import { Actividades } from "./Actividades";
 
-export const Home = () => {
+export const BarraAcciones = () => {
+
   const [tab, setTab] = useState(0);
-
-  const tabs = [<Actividades />, <Actividades />];
-
   return (
     <>
-      <PrimarySearchAppBar />
-      <AppBar color="inherit" position="static">
+      <AppBar color="inherit">
+        <Toolbar />
         <Tabs
           value={tab}
           variant="fullWidth"
@@ -30,7 +26,7 @@ export const Home = () => {
           />
         </Tabs>
       </AppBar>
-      {tabs[tab]}
+      <Toolbar />
     </>
-  );
-};
+  )
+}
